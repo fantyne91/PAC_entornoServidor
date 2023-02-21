@@ -1,0 +1,71 @@
+
+body{
+	background-color: rgb(241, 237, 221);
+	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+label {
+	font-weight:  bold
+}
+th,td{
+	padding: 7px 10px;
+}
+header{
+	background-color: #131313;
+	height: 60px;
+}
+.container{	
+	background-color: rgb(236, 230, 204);	
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.lista{
+	
+	flex-direction: column;
+	display: flex;
+	padding: 50px;
+	align-items: center;
+	
+	
+}
+.boton{
+	background-color: white;
+	padding:1px 5px;
+	border: 1.5px solid rgb(127, 116, 116);
+	border-radius: 10px;
+	margin: 1px;
+	align-items: center;
+	text-decoration: none;
+}
+
+/*INDEX*/
+#bienvenida{
+	margin-left:180px;
+	width:250px;
+	text-align: center;	
+}
+.form{
+	background-color: rgb(229 226 219);
+	border-radius: 40px;
+	border: #100f0f solid 1px;
+	margin-top:30px;
+	padding: 40px;
+	
+	box-shadow: 0 1px 18px #100f0f;
+	display: inline-block;
+}
+.guia{	
+	padding:20px 45px;	
+	width: 550px;
+	display: inline-block;	
+}
+/*USUARIOS */
+.permisos{
+	display: inline-block;
+}
+.green {
+	background: rgb(145, 246, 120);
+}
+

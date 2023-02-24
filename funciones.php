@@ -85,7 +85,7 @@
                  <p><label> Precio: </label> 
                     <input type='number' name='precio' value=''></p>
                   <p><label> Categoría: </label> 
-                      <input type='text' name='Categoria'>
+                      <input type='text' name='categoria'>
                          
                   
                     <input type='submit' name='Añadir' value='Añadir'></form>";             

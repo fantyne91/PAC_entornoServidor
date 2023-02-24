@@ -34,7 +34,7 @@
                    
                 }
                 if(isset($_GET['Añadir'])){
-                    if(anadirProducto($_GET["nombre"],$_GET["coste"],$_GET["precio"])){
+                    if(anadirProducto($_GET["nombre"],$_GET["coste"],$_GET["precio"],$_GET["categoria"])){
                     echo "<p class='green'> Se ha añadido ".$_GET['nombre']." </p>";
                                                 
                    }else{

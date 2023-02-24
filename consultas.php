@@ -114,17 +114,28 @@
             return $resultado;
 	}
 
-//todo añadir categoria nombre
-	function anadirProducto($nombre, $coste, $precio) {
+//todo sin categoria guarda pero no pinta, con categoria no pinta, error bd relacional
+	function anadirProducto($nombre, $coste, $precio,$categoria) {
             $con= crearConexion();
             $consulta= "INSERT INTO PRODUCT ( Name, Cost, Price)
             VALUES ('$nombre', '$coste', '$precio')";
+
+            $consulta1= "INSERT INTO CATEGORY ( Name)
+            VALUES ('$categoria')";
+
             $resultado=mysqli_query($con, $consulta);
+            $resultado=mysqli_query($con, $consulta1);
             cerrarConexion($con);
             return $resultado;
 		
 	}
-
+    // function anadirProducto($nombre, $coste, $precio) {
+    //     $con= crearConexion();
+    //     $consulta= "INSERT INTO PRODUCT ( Name, Cost, Price)
+    //     VALUES ('$nombre', '$coste', '$precio')";
+    //     $resultado=mysqli_query($con, $consulta);
+    //     cerrarConexion($con);
+    //     return $resultado;
 
 	function borrarProducto($id) {
 		// Completar...	
